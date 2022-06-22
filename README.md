@@ -29,6 +29,9 @@ docker image nvidia/cuda:11.2.1-cudnn8-devel-ubuntu18.04
 &nbsp;Douban dataset can be aquired from the github site of original Douban paper.  
 &nbsp;We provide the checkpoint for SemSol (w/o utterances) for Douban dataset learned by our evaluation in supplementary materials. The checkpoint, “SemSol_without_utterances_best.pt”, is put in “SemSol” directory.  
 &nbsp;The result by this checkpoint can be aquired by the following inference command:  
+  
+- [SemSol_without_utterances_best.pt](https://www.dropbox.com/s/9r36z81iu940pd5/SemSol_without_utterances_best.zip?dl=0)
+
 ```
 # CUDA_VISIBLE_DEVICES=0 python3 -u Fine-Tuning/Response_selection.py \
       --task douban \
