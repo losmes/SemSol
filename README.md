@@ -29,6 +29,7 @@ nvidia/cuda:11.2.1-cudnn8-devel-ubuntu18.04
 ## Source code of SemSol
 &nbsp;Source code of semsol is included in “Pre-Training” and “Fine-tuning”directories. Our code is built based on the implementation of [BERT-FP](https://github.com/hanjanghoon/BERT_FP)
 &nbsp;The core component for utterance embeddings and that for semantic embeddings are implemented in “semsol_model.py” and “fine_semsol_model.py”, respectively. 
+This code is reimplemented as a fork of huggingface/transformers.
 
 ## Douban dataset and our checkpoint
 &nbsp;Douban dataset can be aquired from the github site of original Douban paper.  
