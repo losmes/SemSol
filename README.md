@@ -1,14 +1,3 @@
-## Douban Conversation Corpus
-|  Model  |  MAP  |  MRR  |  P@1  |  R1  |  R2  |  R5  |Paper and Code|
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|SemSol(W/O utterances)|_**0.651**_|_**0.687**_|0.510|0.328|0.552|0.877|Response Selection utilizing Semantics underlies Multi-Turn Open-Domain Conversations (under review)|
-|SemSol|0.640|0.678|0.511|_**0.330**_|0.520|0.870|Response Selection utilizing Semantics underlies Multi-Turn Open-Domain Conversations (under review)|
-|BERT-FP (Han et al., 2021)|0.644|0.680|0.512|0.324|0.542|0.870|Fine-grained Post-training for Improving Retrieval-based Dialogue Systems. NAACL 2021.|
-|SA-BERT+HCL (Su et al., 2021)|0.639|0.681|0.514|0.330|0.531|0.858|Dialogue Response Selection with Hierarchical Curriculum Learning. ACL 2021.|
-|UMS_BERT+ (Whang et al., 2020)|0.625|0.664|0.499|0.318|0.482|0.858|Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection. AAAI 2021.|
-|SA-BERT (Gu et al., 2020)|0.619|0.659|0.496|0.313|0.481|0.847|Speaker-Aware BERT for Multi-Turn Response Selection in Retrieval-Based Chatbots. CIKM 2020.|
-|DCM (Li et al., 2020)|0.611|0.649|-|0.294|0.498|0.842|Deep context modeling for multi-turn response selection in dialogue systems. Information Processing & Management 2020.|
-
 ## Setup and Dependencies
 &nbsp;This code is implemented using PyTorch v1.8.2 version and NLTK v3.6.7
 version and provides out-of-the-box support with CUDA 11.2. Anaconda is
@@ -88,3 +77,13 @@ This code is reimplemented as a fork of huggingface/transformers.
     --score_file_path ./Fine-Tuning/FT_checkpoint/douban_fine_scorefile.txt \
     --learning_rate 3e-5
 ```
+## Douban Conversation Corpus
+|  Model  |  MAP  |  MRR  |  P@1  |  R1  |  R2  |  R5  |Paper and Code|
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|SemSol(W/O utterances)|_**0.651**_|_**0.687**_|0.510|0.328|0.552|0.877|Response Selection utilizing Semantics underlies Multi-Turn Open-Domain Conversations (under review)|
+|SemSol|0.640|0.678|0.511|_**0.330**_|0.520|0.870|Response Selection utilizing Semantics underlies Multi-Turn Open-Domain Conversations (under review)|
+|BERT-FP (Han et al., 2021)|0.644|0.680|0.512|0.324|0.542|0.870|Fine-grained Post-training for Improving Retrieval-based Dialogue Systems. NAACL 2021.|
+|SA-BERT+HCL (Su et al., 2021)|0.639|0.681|0.514|0.330|0.531|0.858|Dialogue Response Selection with Hierarchical Curriculum Learning. ACL 2021.|
+|UMS_BERT+ (Whang et al., 2020)|0.625|0.664|0.499|0.318|0.482|0.858|Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection. AAAI 2021.|
+|SA-BERT (Gu et al., 2020)|0.619|0.659|0.496|0.313|0.481|0.847|Speaker-Aware BERT for Multi-Turn Response Selection in Retrieval-Based Chatbots. CIKM 2020.|
+|DCM (Li et al., 2020)|0.611|0.649|-|0.294|0.498|0.842|Deep context modeling for multi-turn response selection in dialogue systems. Information Processing & Management 2020.|
