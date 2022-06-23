@@ -1,8 +1,8 @@
 ## Douban Conversation Corpus
 |  Model  |  MAP  |  MRR  |  P@1  |  R1  |  R2  |  R5  |Paper and Code|
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|SemSol(W/O utterances)|**0.651**|0.687|0.510|0.328|0.552|0.877||
-|SemSol|0.640|0.678|0.511|0.330|0.520|0.870||
+|SemSol(W/O utterances)|_**0.651**_|_**0.687**_|0.510|0.328|0.552|0.877||
+|SemSol|0.640|0.678|0.511|_**0.330**_|0.520|0.870||
 |BERT-FP (Han et al., 2021)|0.644|0.680|0.512|0.324|0.542|0.870|Fine-grained Post-training for Improving Retrieval-based Dialogue Systems. NAACL 2021.|
 |SA-BERT+HCL (Su et al., 2021)|0.639|0.681|0.514|0.330|0.531|0.858|Dialogue Response Selection with Hierarchical Curriculum Learning. ACL 2021.|
 |UMS_BERT+ (Whang et al., 2020)|0.625|0.664|0.499|0.318|0.482|0.858|Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection. AAAI 2021.|
