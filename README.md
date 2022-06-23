@@ -10,15 +10,20 @@
 |DCM (Li et al., 2020)|0.611|0.649|-|0.294|0.498|0.842|Deep context modeling for multi-turn response selection in dialogue systems. Information Processing & Management 2020.|
 
 ## Setup and Dependencies
-&nbsp;This code is implemented using PyTorch v1.8.2, and provides out of the box support with CUDA 11.2 Anaconda is the recommended to set up this codebase.  
-&nbsp;The example for setting for runnig our codebase is as follow:
+&nbsp;This code is implemented using PyTorch v1.8.2 version and NLTK v3.6.7
+version and provides out-of-the-box support with CUDA 11.2. Anaconda is
+recommended for setting up this codebase.
+
+An example of running our codebase is as follows:
 ```
-docker image nvidia/cuda:11.2.1-cudnn8-devel-ubuntu18.04
+nvidia/cuda:11.2.1-cudnn8-devel-ubuntu18.04
 # apt update
-# apt install -y git python3 python3-pip vim
+# apt install -y git python3 python3-pip vim wget unzip
 # pip3 install --upgrade pip
-# pip3 install numpy==1.19.5 setproctitle==1.2.2 tqdm==4.56.2 transformers==2.8.0
-# pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio==0.8.2 -f https://download.pytorch.rg/whl/lts/1.8/torch_lts.html
+# pip3 install numpy==1.19.5 setproctitle==1.2.2 tqdm==4.56.2 transformers==2.8.0 nltk==3.6.7 spacy==3.2.3
+# pip3 install torch==1.8.2+cu111 torchvision==0.9.2+cu111 torchaudio==0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
+# python3 -m spacy download zh_core_web_sm
+# python3 -m spacy download en_core_web_sm
 ```
 
 ## Source code of SemSol
@@ -27,7 +32,7 @@ docker image nvidia/cuda:11.2.1-cudnn8-devel-ubuntu18.04
 
 ## Douban dataset and our checkpoint
 &nbsp;Douban dataset can be aquired from the github site of original Douban paper.  
-&nbsp;We provide the checkpoint for SemSol (w/o utterances) for Douban dataset learned by our evaluation in supplementary materials. The checkpoint, “SemSol_without_utterances_best.pt”, is put in “SemSol” directory.  
+&nbsp;We provide the checkpoint for SemSol (w/o utterances) for Douban dataset learned by our evaluation. The checkpoint, “SemSol_without_utterances_best.pt”, can be downloaded from the below and should be put in “SemSol” directory.  
 &nbsp;The result by this checkpoint can be aquired by the following inference command:  
   
 - [SemSol_without_utterances_best.pt](https://www.dropbox.com/s/9r36z81iu940pd5/SemSol_without_utterances_best.zip?dl=0)
